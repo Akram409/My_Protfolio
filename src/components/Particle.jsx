@@ -1,4 +1,4 @@
-import Particles from "react-tsparticles";
+import Particles from "react-particles";
 import "../style.css";
 
 function Particle() {
@@ -9,7 +9,7 @@ function Particle() {
         particles: {
           number: {
             value: 160,
-            density: {
+          density: {
               enable: true,
               value_area: 1500,
             },

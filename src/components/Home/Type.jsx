@@ -1,19 +1,22 @@
+
 import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <Typewriter
-      options={{
-        strings: [
-          "Web Developer",
-          "Software Developer",
-          "MERN Stack Developer",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 50,
-      }}
-    />
+    <><Typewriter
+    options={{
+      strings: [
+        "Web Developer",
+        "Software Developer",
+        "MERN Stack Developer",
+      ],
+      autoStart: true,
+      loop: true,
+      deleteSpeed: 50,
+    }}
+  />
+  </>
+  
   );
 }
 

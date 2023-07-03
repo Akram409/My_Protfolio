@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
+
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -25,12 +26,23 @@ function Home() {
                 I'M
                 <strong className="main-name"> AKRAM HOSSAIN</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <p className="pg-name">
+                Passionate and introverted junior Web developer with a deep love
+                for technology and coding. Exceptional team player, adept at
+                leveraging collaborative skills to deliver innovative solutions.
+                Seeking to utilize my expertise in a dynamic role and contribute
+                to impactful website development.
+              </p>
+              <div
+                style={{
+                  paddingLeft: 45,
+                  paddingBottom: 20,
+                  textAlign: "left",
+                }}
+              >
                 <Type />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}

@@ -7,3 +7,56 @@ body{
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
 
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.bgColor{
+  background-color: #ac31dd;
+  border-radius: 20px;
+}
+
+.bottom-navbar .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white !important;
+}
+
+.bottom-navbar .nav-link.active {
+  color: #007bff;
+}
+
+@media (min-width: 576px) {
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 10px;
+    background-color: #ac31dd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bottom-navbar .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+  }
+}
+
+.icon{
+  padding-right: 20px;
+}
+.icon1{
+  padding-left: 20px;
+}

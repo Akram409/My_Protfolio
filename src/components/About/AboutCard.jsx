@@ -1,5 +1,7 @@
-
+import pdf from "../../Assets/../Assets/AkramHossain_Resume.pdf";
+import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import { AiOutlineDownload } from "react-icons/ai";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
@@ -8,9 +10,16 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-          Welcome to my website and thank you for taking the time to explore my portfolio! My name is<span className="purple"> Akram Hossain </span>
+            Welcome to my website and thank you for taking the time to explore
+            my portfolio! My name is
+            <span className="purple"> Akram Hossain </span>
             from <span className="purple"> Bangladesh.</span>
-            <br /> I am a Forth year student pursuing an Integrated BSc in CSE from <span className="purple"> International Islamic University Chittagong.</span>
+            <br /> I am a Forth year student pursuing an Integrated BSc in CSE
+            from{" "}
+            <span className="purple">
+              {" "}
+              International Islamic University Chittagong.
+            </span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -25,10 +34,20 @@ function AboutCard() {
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
+            <Button
+              variant="primary"
+              href={pdf}
+              target="_blank"
+              className=""
+              style={{ maxWidth: "250px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download Resume
+            </Button>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-          Programming is the art of turning imagination into reality.
+            Programming is the art of turning imagination into reality.
           </p>
           <footer className="blockquote-footer">Unknown</footer>
         </blockquote>

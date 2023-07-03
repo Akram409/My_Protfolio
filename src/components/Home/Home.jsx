@@ -1,17 +1,18 @@
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-
-import Particle from "../Particle";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import pdf from "../../Assets/../Assets/AkramHossain_Resume.pdf";
+import Lottie from "lottie-react";
+import working from "/public/computer.json";
 import Home2 from "./Home2";
 import Type from "./Type";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import { AiOutlineDownload } from "react-icons/ai";
+import Contact from "../Contact";
 
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
+      <Container fluid className="home-section">
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -26,6 +27,15 @@ function Home() {
                 I'M
                 <strong className="main-name"> AKRAM HOSSAIN</strong>
               </h1>
+              <Button
+                variant="primary"
+                href={pdf}
+                target="_blank"
+                style={{ maxWidth: "250px", marginLeft: 45,marginBottom: 10}}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Resume
+              </Button>
               <p className="pg-name">
                 Passionate and introverted junior Web developer with a deep love
                 for technology and coding. Exceptional team player, adept at
@@ -44,11 +54,10 @@ function Home() {
               </div>
             </Col>
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+              <Lottie
+                animationData={working}
+                loop={true}
+                style={{ background: "transparent" }}
               />
             </Col>
           </Row>
@@ -57,6 +66,7 @@ function Home() {
       <About />
       <Projects />
       <Home2 />
+      <Contact />
     </section>
   );
 }

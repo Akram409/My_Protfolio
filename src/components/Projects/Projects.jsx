@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import chatify from "../../Assets/Projects/chatify.png";
+import drg from "../../Assets/Projects/drg.png";
+import job from "../../Assets/Projects/job.png";
+import toy from "../../Assets/Projects/toy.png";
 import { FaBold } from "react-icons/fa";
 
 function Projects() {
@@ -18,11 +20,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={drg}
               isBlog={false}
               style={{font:FaBold}}
               title="Dragon-s-Kitchen"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="Discover Dragon's Kitchen: a captivating recipe website with visually enticing banners, featuring mouthwatering dishes and brief descriptions. Explore a vast collection of tried-and-true favorites, spanning traditional classics to innovative creations. Powered by ReactJS, React-Router, JavaScript, HTML, and CSS (including Tailwind library), our seamless platform ensures a delightful culinary experience for all. Unleash your creativity and savor the flavors with Dragon's Kitchen."
               clientLink="https://github.com/Akram409/ToyGalaxy-Client"
               serverLink="https://github.com/Akram409/Dragon-s-Kitchen-Server"
               liveLink="https://dragon-s-kitchen.web.app/"
@@ -30,24 +32,22 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={toy}
               isBlog={false}
               style={{font:FaBold}}
               title="ToyGalaxy"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              clientLink="https://github.com/Akram409/ToyGalaxy-Client"
+              description="Discover ToyGalaxy: a dynamic toy website powered by ReactJS, ExpressJS, HTML, CSS (including Tailwind library), and MongoDB. Explore a vast toy collection, add, update, and delete toy details effortlessly. With captivating UI, vibrant colors, and enchanting AOS animations, ToyGalaxy is where imagination thrives."
               serverLink="https://github.com/Akram409/ToyGalaxy-Server"
               liveLink="https://toygalaxy-client.web.app/"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={job}
               isBlog={false}
               style={{font:FaBold}}
               title="jobHunter"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              clientLink="https://github.com/Akram409/JobHunter-Client"
+              description="Introducing JobHunter: the ultimate job search platform. Easily navigate through various job categories, explore featured listings, and access comprehensive job details. With a powerful tech stack including ReactJS, ExpressJS, HTML, CSS (including Tailwind library), and MongoDB, JobHunter streamlines your career journey. Find your dream job with ease and take the next step in your professional growth."
               liveLink="https://splendid-trifle-145681.netlify.app/"
             />
           </Col>

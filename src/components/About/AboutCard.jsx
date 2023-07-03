@@ -1,7 +1,4 @@
-import pdf from "../../Assets/../Assets/AkramHossain_Resume.pdf";
-import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { AiOutlineDownload } from "react-icons/ai";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
@@ -34,16 +31,6 @@ function AboutCard() {
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
-            <Button
-              variant="primary"
-              href={pdf}
-              target="_blank"
-              className=""
-              style={{ maxWidth: "250px" }}
-            >
-              <AiOutlineDownload />
-              &nbsp;Download Resume
-            </Button>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>

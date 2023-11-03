@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import pdf from "../../Assets/../Assets/AkramHossain_Resume.pdf";
+import pdf from "../../Assets/../Assets/AkramHossainResume.pdf";
 import Lottie from "lottie-react";
 import working from "/public/computer.json";
 import Home2 from "./Home2";

@@ -33,10 +33,11 @@ function Projects() {
               isBlog={false}
               two={true}
               style={{font:FaBold}}
-              title="ToyGalaxy"
-              description="Discover ToyGalaxy: a dynamic toy website powered by ReactJS, ExpressJS, HTML, CSS (including Tailwind library), and MongoDB. Explore a vast toy collection, add, update, and delete toy details effortlessly. With captivating UI, vibrant colors, and enchanting AOS animations, ToyGalaxy is where imagination thrives."
-              serverLink="https://github.com/Akram409/ToyGalaxy-Server"
-              liveLink="https://toygalaxy-client.web.app/"
+              title="ED_Nexus"
+              description="Ed_Nexus revolutionizes the learning experience by merging the best of Google Classroom with innovative features.Our platform fosters engagement through dynamic course discussions,interactive blog posts and timely notifications.With seamless video integration and an intuitive chat system,learning becomes more immersive and collaborative.The robust admin dashboard empowers efficient management, offering valuable insights into user activity,courses, messages, and blog posts."
+              clientLink="https://github.com/akil-tajwar/Ed_Nexus"
+              serverLink="https://github.com/akil-tajwar/Ed_Nexus"
+              liveLink="https://ed-nexus.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">

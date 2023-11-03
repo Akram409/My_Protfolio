@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import toy from "../../Assets/Projects/toy.png";
+import ED from "../../Assets/Projects/ED_Nexus.png";
 import img5 from "/public/5.png"
 import img6 from "/public/6.png"
 import img7 from "/public/7.png"
@@ -20,7 +20,7 @@ function ProjectImg2() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={toy}
+          src={ED}
           alt="First slide"
         />
         <Carousel.Caption>

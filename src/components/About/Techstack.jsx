@@ -10,6 +10,7 @@ import {
   TbApi,
   TbBrandTailwind,
   TbBrandCss3,
+  TbBrandNextjs,
 } from "react-icons/tb";
 
 function Techstack() {
@@ -57,6 +58,9 @@ function Techstack() {
           <strong className="purple icon-link">Comfortable</strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <TbBrandNextjs />
+          </Col>
           <Col xs={4} md={2} className="tech-icons">
             <TbApi />
           </Col>
